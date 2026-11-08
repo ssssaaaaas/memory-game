@@ -9,7 +9,7 @@ describe('gameConfig', () => {
     expect(DIFFICULTY_LEVELS[0]).toEqual({
       name: 'Easy',
       rows: 2,
-      cols: 2,
+      cols: 3,
       id: 'easy'
     })
   })

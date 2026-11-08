@@ -1,7 +1,7 @@
 .memory-game {
   min-height: 100vh;
   padding: 1rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(180deg, #fffbeb, #fef3c7);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
 
 .game-header {
   text-align: center;
-  color: white;
+  color: #713f12;
   margin-bottom: 2rem;
 }
 
@@ -63,19 +63,19 @@
 }
 
 .difficulty-btn:hover {
-  border-color: #667eea;
+  border-color: #d97706;
   background: #f8faff;
 }
 
 .difficulty-btn.active {
-  border-color: #667eea;
-  background: #667eea;
+  border-color: #d97706;
+  background: #d97706;
   color: white;
 }
 
 .difficulty-btn:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.3);
 }
 
 /* Game Controls */
@@ -121,7 +121,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background: #667eea;
+  background: #d97706;
   color: white;
   border: none;
   border-radius: 8px;
@@ -132,20 +132,20 @@
 }
 
 .restart-btn:hover {
-  background: #5a67d8;
+  background: #b45309;
   transform: translateY(-1px);
 }
 
 .restart-btn:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.3);
 }
 
 /* Game Board - Responsive Grid with Difficulty-Based Spacing */
 .game-board {
   display: grid;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: #fef3c7;
   border-radius: 12px;
   backdrop-filter: blur(10px);
   width: 100%;
@@ -241,8 +241,8 @@
 }
 
 .card-front {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
+  background: linear-gradient(135deg, #fcd34d, #fbbf24);
+  color: #78350f;
 }
 
 .card-back {
@@ -450,4 +450,13 @@
   .game-board[data-difficulty="hard"] {
     gap: 0.15rem;
   }
+}
+
+/* Footer (credit) */
+.game-footer {
+  margin-top: 2rem;
+  color: #713f12;
+  opacity: 0.85;
+  font-size: 0.9rem;
+  text-align: center;
 }

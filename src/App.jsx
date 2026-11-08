@@ -65,7 +65,7 @@ const MemoryCardGame = () => {
     <div className="memory-game">
       <header className="game-header">
         <h1>Memory Card Game</h1>
-        <p>Match all pairs to win!</p>
+        <p>같은 그림의 카드를 모두 찾아보세요!</p>
       </header>
 
       <main className="game-main">
